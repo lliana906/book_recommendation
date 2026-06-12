@@ -15,7 +15,7 @@ def getRecommendation(cosine_sim):
 
 df_title = pd.read_csv('./data/final_merge_preprocessed.csv')
 Tfidf_matrix = mmread('./models/Tfidf_book_total.mtx').tocsr()
-with open('models/tfidf_total.pkl', 'rb') as f:
+with open('./models/tfidf_total.pkl', 'rb') as f:
     Tfidf = pickle.load(f)
 
 # 영화 index 이용

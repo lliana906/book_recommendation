@@ -13,7 +13,7 @@ df_temp['국가'] = '일본'
 df=pd.concat([df_temp, df],ignore_index=True)
 
 
-df_temp = pd.read_csv('../data_나라/yes24_steadyseller_한국.csv')
+df_temp = pd.read_csv('./data_나라/yes24_steadyseller_한국.csv')
 df_temp['국가'] = '한국'
 
 df=pd.concat([df_temp, df],ignore_index=True)

@@ -8,7 +8,7 @@ font_path = './malgun.ttf'
 font_name = font_manager.FontProperties(fname = font_path).get_name()
 plt.rc('font', family = 'NanumBarunGothic')
 
-df = pd.read_csv('./data/final_merge_preprocessed.csv')
+df = pd.read_csv('../data/final_merge_preprocessed.csv')
 book_index = 4397
 words = str(df.loc[book_index, '설명']).split()
 print(df.loc[book_index, '제목'])

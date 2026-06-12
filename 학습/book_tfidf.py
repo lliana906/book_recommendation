@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.io import mmwrite, mmread
 import pickle
 
-df = pd.read_csv('./data/final_merge_preprocessed.csv')
+df = pd.read_csv('data/final_merge_preprocessed.csv')
 df.info()
 
 use_cols = ['설명', '장르', '상품명', '저자', '출판사', '국가']

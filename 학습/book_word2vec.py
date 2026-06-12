@@ -1,7 +1,7 @@
 import pandas as pd
 from gensim.models import Word2Vec
 
-df_book = pd.read_csv('data/final_merge_preprocessed.csv')
+df_book = pd.read_csv('./data/final_merge_preprocessed.csv')
 df_book.info()
 
 use_cols = ['설명', '장르', '상품명', '저자', '출판사', '국가']
